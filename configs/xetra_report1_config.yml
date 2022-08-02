@@ -1,15 +1,15 @@
-# configuration specific to creatign s3 connections
+# configuration specific to creating s3 connections
 s3:
   access_key: 'AWS_ACCESS_KEY_ID'
   secret_key: 'AWS_SECRET_ACCESS_KEY'
   src_endpoint_url: 'https://s3.amazonaws.com'
-  src_bucket: 'deutsche-boerse-xetra-pds'
+  src_bucket: 'xetra-1234'
   trg_endpoint_url: 'https://s3.amazonaws.com'
-  trg_bucket: 'xetra-int-test-src-407'
+  trg_bucket: 'xetra-407'
 
 # configuratinon specific to the source 
 source:
-  src_first_extract_date: '2022-05-12'
+  src_first_extract_date: '2022-07-28'
   src_columns: ['ISIN', 'Mnemonic', 'Date', 'Time', "StartPrice", 'EndPrice', 'MinPrice', 'MaxPrice', 'TradedVolume']
   src_col_date: 'Date'
   src_col_isin: 'ISIN'

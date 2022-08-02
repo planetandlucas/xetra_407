@@ -86,23 +86,23 @@ class IntTestXetraETLMethods(unittest.TestCase):
                 ['AT0000A0E9W5', 'SANT', self.dates[1], '09:00', 24.22, 22.21, 22.21, 25.01, 1523]]
         self.df_src = pd.DataFrame(data, columns=columns_src)
         self.s3_bucket_src.write_df_to_s3(self.df_src.loc[0:0],
-        f'{self.dates[5]}/{self.dates[5]}_BINS_XETR12.csv','csv')
+        f'{self.dates[5]}/{self.dates[5]}_BINS_XETR12.csv',',csv')
         self.s3_bucket_src.write_df_to_s3(self.df_src.loc[1:1],
-        f'{self.dates[4]}/{self.dates[4]}_BINS_XETR15.csv','csv')
+        f'{self.dates[4]}/{self.dates[4]}_BINS_XETR15.csv',',csv')
         self.s3_bucket_src.write_df_to_s3(self.df_src.loc[2:2],
-        f'{self.dates[3]}/{self.dates[3]}_BINS_XETR13.csv','csv')
+        f'{self.dates[3]}/{self.dates[3]}_BINS_XETR13.csv',',csv')
         self.s3_bucket_src.write_df_to_s3(self.df_src.loc[3:3],
-        f'{self.dates[3]}/{self.dates[3]}_BINS_XETR14.csv','csv')
+        f'{self.dates[3]}/{self.dates[3]}_BINS_XETR14.csv',',csv')
         self.s3_bucket_src.write_df_to_s3(self.df_src.loc[4:4],
-        f'{self.dates[2]}/{self.dates[2]}_BINS_XETR07.csv','csv')
+        f'{self.dates[2]}/{self.dates[2]}_BINS_XETR07.csv',',csv')
         self.s3_bucket_src.write_df_to_s3(self.df_src.loc[5:5],
-        f'{self.dates[2]}/{self.dates[2]}_BINS_XETR08.csv','csv')
+        f'{self.dates[2]}/{self.dates[2]}_BINS_XETR08.csv',',csv')
         self.s3_bucket_src.write_df_to_s3(self.df_src.loc[6:6],
-        f'{self.dates[1]}/{self.dates[1]}_BINS_XETR07.csv','csv')
+        f'{self.dates[1]}/{self.dates[1]}_BINS_XETR07.csv',',csv')
         self.s3_bucket_src.write_df_to_s3(self.df_src.loc[7:7],
-        f'{self.dates[1]}/{self.dates[1]}_BINS_XETR08.csv','csv')
+        f'{self.dates[1]}/{self.dates[1]}_BINS_XETR08.csv',',csv')
         self.s3_bucket_src.write_df_to_s3(self.df_src.loc[8:8],
-        f'{self.dates[1]}/{self.dates[1]}_BINS_XETR09.csv','csv')
+        f'{self.dates[1]}/{self.dates[1]}_BINS_XETR09.csv',',csv')
         columns_report = ['ISIN', 'Date', 'opening_price_eur', 'closing_price_eur',
         'minimum_price_eur', 'maximum_price_eur', 'daily_traded_volume', 'change_prev_closing_%']
         data_report = [['AT0000A0E9W5', self.dates[3], 20.21, 18.27, 18.21, 21.34, 1088, 10.62],

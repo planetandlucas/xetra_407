@@ -14,9 +14,9 @@ awscli = "*"
 pylint = "*"
 moto = "*"
 coverage = "*"
+memory-profiler = "*"
+matplotlib = "*"
 
 [requires]
 python_version = "3.10"
 jupyter = "*"
-
-    
